@@ -1,0 +1,37 @@
+<script src="src/signaturejs.js"></script>
+<button id="dataUrl" type="button">get data url</button>
+<button id="clear" type="button">clear</button>
+<div id="container">
+</div>
+
+<h2>image from data url</h2>
+<img id="canvasimg">
+<h2>data url</h2>
+<div id="dataurl" />
+<script>
+    var mySignature = new Signature({
+        containerId: 'container',
+        width: 500,
+        height: 300,
+        color: 'blue',
+        lineWidth: 2
+    });
+    mySignature.open();
+
+    var clearButton = document.getElementById('clear');
+    clearButton.addEventListener('click', function () {
+        mySignature.clear();
+    });
+
+    var dataUrlButton = document.getElementById('dataUrl');
+        dataUrlButton.addEventListener('click', function () {
+        document.getElementById("canvasimg").src = mySignature.getDataUrl();
+        document.getElementById("dataurl").innerText = mySignature.getDataUrl();
+    });
+</script>
+
+<style>
+    .signature-canvas {
+        border: 1px solid black;
+    }
+</style>
