@@ -23,7 +23,6 @@ http://iccshome.thddns.net:3310/signature/demo.html
 ```
    {
         autoOpen: false,
-        closeButton: true,
         color: 'black',
         containerId: "",
         lineWidth: 1

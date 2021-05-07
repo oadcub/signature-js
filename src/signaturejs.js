@@ -5,7 +5,6 @@
 
         var defaults = {
             autoOpen: false,
-            closeButton: true,
             containerId: "",
             width: 400,
             height: 200,
