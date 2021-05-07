@@ -6,6 +6,7 @@ http://iccshome.thddns.net:3310/signature/demo.html
 
 ### sample code
 ```
+<script src="src/signaturejs.js"></script>
 <div id = "container" />
 <script>
     var mySignature = new Signature({
